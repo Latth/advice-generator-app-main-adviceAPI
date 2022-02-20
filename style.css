@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {font-size: 10px;}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background:hsl(217, 19%, 24%);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#advice {
+    width: 30%;
+    background-color: hsl(217, 19%, 38%);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 4rem 7rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+#advice h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 3rem 0;
+}
+#advice p {
+    font-size: 1.6rem;
+    font-weight:lighter;
+    line-height: 2.5rem;
+    letter-spacing:.6rem;
+    color:hsl(150, 100%, 66%);
+}
+
+.img-divider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    width: 100%;
+}
+.img-divider img {
+    width: 100%;
+}
+.img-divider::before {
+    content: '';
+    width: 45%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+}
+.img-divider::after {
+    content: '';
+    width: 45%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+}
+
+button {
+    padding: 2rem;
+    border-radius: 100%;
+    position: absolute;
+    display: inline-block;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: hsl(150, 100%, 66%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-out;
+}
+button:hover {
+    /* background: hsl(150, 100%, 50%); */
+    box-shadow: 0 0 30px hsl(150, 100%, 50%);
+    transition: .5s ease-in;
+}
